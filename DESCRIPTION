@@ -1,0 +1,21 @@
+Package: scsea
+Type: Package
+Title: An implementation of score card
+Version: 0.0.0.9001
+Author: Nguyen Ngoc Binh
+Maintainer: Nguyen Ngoc Binh <nguyenngocbinhneu@gmail.com>
+Description: Build score card from logistic model, include some feature selection
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr (>= 0.8.0.1),
+    ggplot2 (>= 3.1.1),
+    purrr (>= 0.3.2),
+    pROC (>= 1.14.0),
+    ROCR (>= 1.0.7),
+    tidyr (>= 0.8.3),
+    magrittr (>= 1.5)
+Suggests: 
+    scorecard (>= 0.2.4)
+RoxygenNote: 6.1.1
