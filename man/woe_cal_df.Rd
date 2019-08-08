@@ -24,8 +24,10 @@ Compute the woe_cal that shows the Weights Of Evidence (WOE) for each group and 
 For a given actual for a Binary Y variable and a categorical X variable stored as factor, the WOE table is generated with calculated WOE's and IV's
 }
 \examples{
-data('SimData')
-woe_cal_df(data=SimData, woe_table=woe_table)
+data('hmeq')
+hmeq1 <- hmeq[,c("bad", "reason", "job")]
+woe_table <- woe_cal_table(df = hmeq1, y = "bad")
+df_woe <- woe_cal_df(data = hmeq, woe_table = woe_table)
 }
 \author{
 Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
