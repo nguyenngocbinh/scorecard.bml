@@ -5,17 +5,25 @@
 \title{Compute identical rate}
 \usage{
 get_identical(x)
+
+get_identical(x)
 }
 \arguments{
 \item{x}{input variable}
 }
 \description{
 Compute identical rate
+
+Compute identical rate
 }
 \examples{
 data('hmeq')
 get_identical(hmeq$loan)
+data('hmeq')
+get_identical(hmeq$loan)
 }
 \author{
+Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
+
 Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
 }

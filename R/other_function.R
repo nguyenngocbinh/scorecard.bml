@@ -1,6 +1,4 @@
-# =============================================================================
-
-# ============================================================================= table
+# table
 #' @title tab
 #' @description Quickly show frequency table
 #' @details Quickly show frequency table
