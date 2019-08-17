@@ -5,17 +5,25 @@
 \title{Compute missing rate}
 \usage{
 get_missing(x)
+
+get_missing(x)
 }
 \arguments{
 \item{x}{input variable}
 }
 \description{
 Compute missing rate
+
+Compute missing rate
 }
 \examples{
 data('hmeq')
 get_missing(hmeq$loan)
+data('hmeq')
+get_missing(hmeq$loan)
 }
 \author{
+Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
+
 Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
 }

@@ -5,26 +5,43 @@
 \title{Compute information value}
 \usage{
 get_iv(x, y)
+
+get_iv(x, y)
 }
 \arguments{
 \item{x}{categorical variable}
 
 \item{y}{binary variable}
+
+\item{y}{binary variable}
+
+\item{x}{categorical variable}
 }
 \value{
+AUC value
+
 AUC value
 }
 \description{
 Compute the iv
+
+Compute the iv
 }
 \details{
+For a given actual for a Binary Y variable and a category or continous X variable. Information value will be calculated
+
 For a given actual for a Binary Y variable and a category or continous X variable. Information value will be calculated
 }
 \examples{
 data('hmeq')
 iv1 <- get_iv(x = hmeq$reason, y = hmeq$bad)
 iv2 <- get_iv(x = hmeq$loan, y = hmeq$bad)
+data('hmeq')
+iv1 <- get_iv(x = hmeq$reason, y = hmeq$bad)
+iv2 <- get_iv(x = hmeq$loan, y = hmeq$bad)
 }
 \author{
+Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
+
 Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
 }

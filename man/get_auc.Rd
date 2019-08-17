@@ -5,25 +5,41 @@
 \title{get_auc}
 \usage{
 get_auc(x, y)
+
+get_auc(x, y)
 }
 \arguments{
 \item{x}{categorical variable}
 
 \item{y}{binary variable}
+
+\item{y}{binary variable}
+
+\item{x}{categorical variable}
 }
 \value{
+AUC value
+
 AUC value
 }
 \description{
 Compute the auc
+
+Compute the auc
 }
 \details{
+With a Binary Y variable and a categorical X variable stored as factor. AUC value will be calculated
+
 With a Binary Y variable and a categorical X variable stored as factor. AUC value will be calculated
 }
 \examples{
 data('hmeq')
 auc1 <- get_auc(x = hmeq$reason, y = hmeq$bad)
+data('hmeq')
+auc1 <- get_auc(x = hmeq$reason, y = hmeq$bad)
 }
 \author{
+Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
+
 Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
 }

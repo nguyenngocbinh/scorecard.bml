@@ -7,6 +7,10 @@
 filter_sfa(df, y, x_list = NULL, missing_limit = 0.95,
   iv_limit = 0.01, auc_limit = 0.5, ks_limit = 0.1,
   identical_limit = 0.95, var_skip = NULL, return_rm_reason = TRUE)
+
+filter_sfa(df, y, x_list = NULL, missing_limit = 0.95,
+  iv_limit = 0.01, auc_limit = 0.5, ks_limit = 0.1,
+  identical_limit = 0.95, var_skip = NULL, return_rm_reason = TRUE)
 }
 \arguments{
 \item{df}{data.frame contains y and x_list variables}
@@ -28,11 +32,19 @@ filter_sfa(df, y, x_list = NULL, missing_limit = 0.95,
 \item{var_skip}{Name of force kept variables, default is NULL.}
 
 \item{return_rm_reason}{Logical, default is FALSE.}
+
+\item{y}{binary variable}
+
+\item{x_list}{list predictor variables}
 }
 \value{
 data.frame include pass variables
+
+data.frame include pass variables
 }
 \description{
+This function filter variables base on specified conditions, such as information value, missing rate, identical value rate, Kolmogorov Smirnov statistic.
+
 This function filter variables base on specified conditions, such as information value, missing rate, identical value rate, Kolmogorov Smirnov statistic.
 }
 \examples{
@@ -47,7 +59,20 @@ x <- filter_sfa(hmeq1,
            identical_limit = 0.95,
            var_skip = 'loan',
            return_rm_reason = TRUE )
+data('hmeq')
+x <- var_filter(hmeq,
+           y = "bad",
+           missing_limit = 0.95,
+           iv_limit = 0.3,
+           auc_limit = 0.5,
+           ks_limit = 0.4,
+           identical_limit = 0.95,
+           var_rm = NULL,
+           var_skip = "loan",
+           return_rm_reason = TRUE )
 }
 \author{
+Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
+
 Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
 }

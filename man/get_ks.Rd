@@ -5,25 +5,41 @@
 \title{Compute Kolmogorov Smirnov statistic}
 \usage{
 get_ks(x, y)
+
+get_ks(x, y)
 }
 \arguments{
 \item{x}{categorical variable}
 
 \item{y}{binary variable}
+
+\item{y}{binary variable}
+
+\item{x}{categorical variable}
 }
 \value{
+AUC value
+
 AUC value
 }
 \description{
 Compute the ks
+
+Compute the ks
 }
 \details{
+With a Binary Y variable and a categorical X variable stored as factor. KS value will be calculated
+
 With a Binary Y variable and a categorical X variable stored as factor. KS value will be calculated
 }
 \examples{
 data('hmeq')
 ks1 <- get_ks(x = hmeq$reason, y = hmeq$bad)
+data('hmeq')
+ks1 <- get_ks(x = hmeq$reason, y = hmeq$bad)
 }
 \author{
+Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
+
 Nguyen Ngoc Binh \email{nguyenngocbinhneu@gmail.com}
 }
